@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route element={<Layout/>}>
-          <Route index element={<Home/>} />
+          <Route path='/' element={<Home/>} />
           <Route path='/:country' element={<CountryPage/>} />
           <Route path='/:country/exam' element={<CountryPage/>} />
         </Route>

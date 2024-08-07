@@ -1,8 +1,11 @@
 import React from 'react'
+import HeroSection from '../../components/Home/HeroSection'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='max-w-[1200px] mx-auto py-8'>
+        <HeroSection/>
+    </div>
   )
 }
 
