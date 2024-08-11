@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="w-screen h-[70px] bg-primary">
-      <div className="w-full h-full max-w-[1200px] p-2 sm:0 flex justify-between mx-auto items-center">
+      <div className="w-full h-full max-w-[1200px] p-4 sm:p-0 flex justify-between mx-auto items-center">
         <Link to='/'>
           <div className="flex gap-2 items-center">
             <img className="hidden sm:block w-12 h-12" src={logo} />

@@ -16,7 +16,7 @@ const Home = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       };
   return (
-    <div className='max-w-[1200px] mx-auto py-8 flex flex-col gap-4'>
+    <div className='max-w-[1200px] mx-auto sm:py-8 flex flex-col gap-4'>
         <div className='h-[1px]' id="top"></div>
         <HeroSection/>
         <CountrySection/>

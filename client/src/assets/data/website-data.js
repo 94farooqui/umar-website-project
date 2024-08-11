@@ -63,7 +63,7 @@ import CountryVideos from "./../images/CountryPage/country-videos.png";
 import CountrySafety from "./../images/CountryPage/country-safety.png";
 
 export const hero = {
-  title: "Traffic-rules.com",
+  title: "Traffic Expert",
   text: "An online community for driving license and road safety education. Take a free practice test and learn about traffic rules and traffic signs.",
   bulletpoints: [
     " Up-to-date traffic rules.",
