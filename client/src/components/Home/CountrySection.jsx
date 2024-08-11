@@ -17,9 +17,9 @@ const CountrySection = () => {
     return (
       <div className="py-4 px-4 bg-primary text-white shadow-md">
         <div className="flex flex-col gap-4">
-          <div className="flex gap-12 justify-center items-center p-4">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-12 justify-center items-center p-4">
             <div>
-              <img src={countriesIcon} />
+              <img className="w-16" src={countriesIcon} />
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-3xl font-semibold">Countries</h2>
@@ -32,7 +32,7 @@ const CountrySection = () => {
 
           <div className="border-b-2"></div>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {regions.map((region, index) => (
               <div
                 onClick={() => handleRegionChange(index)}
@@ -50,7 +50,7 @@ const CountrySection = () => {
           <div className="bg-white text-primary p-8 flex flex-col gap-4">
             <h2 className="text-2xl">{continent}</h2>
             <hr />
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {countries.map((country) => (
                 <Link to={country.name}>
                   <div className="border-2 flex flex-col gap-4 p-4 justify-center items-center hover:bg-gray-200">

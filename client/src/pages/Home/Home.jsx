@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeroSection from '../../components/Home/HeroSection'
 import CountrySection from '../../components/Home/CountrySection'
 import { Link } from 'react-router-dom'
@@ -6,6 +6,11 @@ import doubleUp from './../../assets/images/home/double-up.svg'
 import Footer from '../../components/Home/Footer'
 
 const Home = () => {
+
+  useEffect(() => {
+    // Scroll to the top of the page on component mount
+    window.scrollTo(0, 0);
+  }, []);
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         element.scrollIntoView({ behavior: 'smooth' });

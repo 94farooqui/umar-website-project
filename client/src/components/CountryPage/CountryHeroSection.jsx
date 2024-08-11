@@ -23,15 +23,15 @@ const CountryHeroSection = () => {
   },[])
   return (
     <div className="w-full  bg-white">
-      <div className="max-w-[1200px] mx-auto flex flex-col items-center sm:flex-row py-4 px-4">
-      <div className="sm:w-3/4 flex flex-col gap-2 pr-12">
-        <h1 className="text-[40px]">
+      <div className="max-w-[1200px] mx-auto flex flex-col items-center gap-8 sm:flex-row sm:justify-between py-12 px-4">
+      <div className="sm:w-3/4 flex flex-col gap-4 pr-12">
+        <h1 className="text-xl font-semibold text-primary sm:text-[40px]">
           {heroTitle} {country}{" "}
         </h1>
-        <p className="text-xl">{heroDescription}</p>
+        <p className="text-md sm:text-xl">{heroDescription}</p>
         <hr className="my-4" />
         <div className="flex flex-col sm:flex-row sm:gap-8">
-          <ul className="text-lg flex flex-col gap-2">
+          <ul className="sm:text-lg flex flex-col gap-2">
             {heroBullets.map((point, index) => {
               if (index < 3) {
                 return (
@@ -43,7 +43,7 @@ const CountryHeroSection = () => {
               }
             })}
           </ul>
-          <ul className="text-lg flex flex-col gap-2">
+          <ul className="sm:text-lg flex flex-col gap-2">
             {heroBullets.map((point, index) => {
               if (index > 2) {
                 return (
@@ -58,7 +58,7 @@ const CountryHeroSection = () => {
         </div>
       </div>
       {countryImage && <div className="sm:w-1/4">
-        <img width={200} src={countryImage} />
+        <img className="w-32 sm:w-48" src={countryImage} />
       </div>}
       </div>
     </div>
