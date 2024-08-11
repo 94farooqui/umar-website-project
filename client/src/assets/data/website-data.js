@@ -55,6 +55,13 @@ import nz from "./../flags/australia/new-zealand.png";
 
 import sa from "./../flags/africa/south-africa.png";
 
+import CountryExamIcon from "./../images/CountryPage/country-exam.png";
+import CountrySigns from "./../images/CountryPage/country-signs.png";
+import CountryStudy from "./../images/CountryPage/country-study.png";
+import CountryCommunity from "./../images/CountryPage/country-community.png";
+import CountryVideos from "./../images/CountryPage/country-videos.png";
+import CountrySafety from "./../images/CountryPage/country-safety.png";
+
 export const hero = {
   title: "Traffic-rules.com",
   text: "An online community for driving license and road safety education. Take a free practice test and learn about traffic rules and traffic signs.",
@@ -226,13 +233,121 @@ export const regions = [
   {
     continent: "Australia",
     countries: [
-        { name: "Australia", flag: australia},
-        { name: "New Zealand", flag: nz},
+      { name: "Australia", flag: australia },
+      { name: "New Zealand", flag: nz },
     ],
   },
   {
     continent: "Africa",
-    countries: [
-        { name: "South Afica", flag: sa},
-    ]}
+    countries: [{ name: "South Afica", flag: sa }],
+  },
+];
+
+export const CountryPageData = {
+  heroSection: {
+    heroTitle: "Traffic Rules In ",
+    heroDescription:
+      "An online community for driving license and road safety education. Take a free practice test and learn about traffic rules and traffic signs.",
+    heroBullets: [
+      "Up-to-date traffic rules.",
+      "Learn the traffic signs.",
+      "Preparation theory exam.",
+      "Road safety videos.",
+      "Take the practice tests.",
+      "Get your driving license.",
+    ],
+  },
+  moduleSection: {
+    modules: [
+      {
+        moduleIcon: CountryExamIcon,
+        moduleTitle: "Exam",
+        moduleDescription: "Test your knowledge with a free Exam.",
+        moduleLink:"practice-test"
+      },
+      {
+        moduleIcon: CountrySigns,
+        moduleTitle: "Traffic Signs",
+        moduleDescription: "An overview of all road signs.",
+          moduleLink:"traffic-signs"
+      },
+      {
+        moduleIcon: CountryStudy,
+        moduleTitle: "Study",
+        moduleDescription: "Study for the exam.",
+        moduleLink:"study"
+      },
+      {
+        moduleIcon: CountryCommunity,
+        moduleTitle: "Community",
+        moduleDescription: "Post a comment or share on social media. ",
+        moduleLink:"comments"
+      },
+      {
+        moduleIcon: CountryVideos,
+        moduleTitle: "Videos",
+        moduleDescription: "Videos about road safety.",
+        moduleLink:"videos"
+      },
+      {
+        moduleIcon: CountrySafety,
+        moduleTitle: "Safety Signs",
+        moduleDescription: "Learn the shape and meaning of the safety signs.",
+        moduleLink:"safety-signs"
+      },
+    ],
+  },
+};
+
+export const CountryImages = [
+  { name: "Austria", flag: austria },
+  { name: "Belgium", flag: belgium },
+  { name: "Bosnia", flag: bosnia },
+  { name: "Czech", flag: czech },
+  { name: "Denmark", flag: denmark },
+  { name: "Finland", flag: finland },
+  { name: "France", flag: france },
+  { name: "Germany", flag: germany },
+  { name: "Greece", flag: greece },
+  { name: "Hungary", flag: hungary },
+  { name: "Iceland", flag: iceland },
+  { name: "Ireland", flag: ireland },
+  { name: "Italy", flag: italy },
+  { name: "Netherlands", flag: netherlands },
+  { name: "Norway", flag: norway },
+  { name: "Poland", flag: poland },
+  { name: "Portugal", flag: portugal },
+  { name: "Romania", flag: romania },
+  { name: "Russia", flag: russia },
+  { name: "Serbia", flag: serbia },
+  { name: "Slovenia", flag: slovenia },
+  { name: "Slovkia", flag: slovkia },
+  { name: "Spain", flag: spain },
+  { name: "Sweden", flag: sweden },
+  { name: "Switzerland", flag: switzerland },
+  { name: "Turkey", flag: turkey },
+  { name: "Ukraine", flag: ukraine },
+  { name: "United Kingdom", flag: uk },
+  { name: "Bangladesh", flag: bangladesh },
+  { name: "China", flag: china },
+  { name: "India", flag: india },
+  { name: "Indonesia", flag: indonesia },
+  { name: "Japan", flag: japan },
+  { name: "Malaysia", flag: malaysia },
+  { name: "Nepal", flag: nepal },
+  { name: "Philippines", flag: philippines },
+  { name: "Thailand", flag: thailand },
+  { name: "Canada", flag: canada },
+  { name: "Mexixo", flag: mexixo },
+  { name: "Panama", flag: panama },
+  { name: "United States", flag: us },
+  { name: "Argentina", flag: argentina },
+  { name: "Brazil", flag: brazil },
+  { name: "Chile", flag: chile },
+  { name: "Colombia", flag: colombia },
+  { name: "Peru", flag: peru },
+  { name: "Uruguay", flag: uruguay },
+  { name: "Australia", flag: australia },
+  { name: "New Zealand", flag: nz },
+  { name: "South Afica", flag: sa }
 ];
